@@ -10,43 +10,19 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(myMap);
 
-// Define a markerSize() function that will give each city a different radius based on its population.
-function markerSize(population) {
-  return Math.sqrt(population) * 50;
+// save a reference to the selected city
+
+d3.select("#hospitalselect").on("change",change);
+
+function change(){
+  hospital = this.options[this.selectedIndex].value
+
+  infectionObject = data.filter(item => item.name === hospital)
+
+  L.marker([infectionObject.latitude,infectionObject.longitude],{  
+
+  }).bindPopup(`${infectionObject.name}<hr>${infectionObject["hai pct"]}`).addTo(myMap);
+
+
 }
 
-// Each city object contains the city's name, location, and population.
-var cities = [
-  {
-    name: "New York",
-    location: [40.7128, -74.0059],
-    population: 8550405
-  },
-  {
-    name: "Chicago",
-    location: [41.8781, -87.6298],
-    population: 2720546
-  },
-  {
-    name: "Houston",
-    location: [29.7604, -95.3698],
-    population: 2296224
-  },
-  {
-    name: "Los Angeles",
-    location: [34.0522, -118.2437],
-    population: 3971883
-  },
-  {
-    name: "Omaha",
-    location: [41.2524, -95.9980],
-    population: 446599
-  }
-];
-
-// Loop through the cities array, and create one marker for each city object.
-for (var i = 0; i < cities.length; i++) {
-  L.marker(cities[i].location, {
-
-  }).bindPopup(`<h1>${cities[i].name}</h1> <hr> <h3>Population: ${cities[i].population.toLocaleString()}</h3>`).addTo(myMap);
-}
