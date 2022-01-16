@@ -1,2 +1,32 @@
 selenium==3.5.0
 splinter==0.7.6
+Certifi == 
+Click == 
+Flask == 
+Flask-sqlAlchemy== 
+gunicorn == 
+itsdangerous == 
+Jinja2 == 
+Markupsafe == 
+numpy== 
+pandas==pd
+sqlAlchemy==sqlite3
+werkzeug== 
+wincertstore==
+bootstrap==4.3.1
+stateselect==d3
+Chart.js==2.5.0
+style.==css
+script.==js
+Home.==css
+Home.==HTML
+jquery.==js
+nicepage.==css
+nicepage.==js
+index2.==html
+logic2.==js
+style.==css
+leafle@==1.6.0
+%matplotlib==inline
+app.py
+plots.js
