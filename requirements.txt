@@ -16,16 +16,10 @@ wincertstore==
 bootstrap==4.3.1
 stateselect==d3
 Chart.js==2.5.0
-style.==css
 script.==js
-Home.==css
-Home.==HTML
 jquery.==js
 nicepage.==css
 nicepage.==js
-index2.==html
-logic2.==js
-style.==css
 leafle@==1.6.0
 %matplotlib==inline
 app.py
