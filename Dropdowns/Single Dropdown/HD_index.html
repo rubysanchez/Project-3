@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dropdown Events</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+
+<body>
+
+    </select>
+    <label>State</label>
+    <select class="form-control selectFilter StateName" id="stateselect">
+    <option value="-1">-- Texas --</option>
+
+    
+
+</select>
+    <label>City</label>
+    <select class="form-control selectFilter cityName" id="cityselect">
+        <option value="-1">-- Select City --</option>
+        <!-- <option value="THE HOSPITALS OF PROVIDENCE - EAST CAMPUS">EL PASO</option> -->
+         
+
+
+</select>
+    <label>Facility</label>
+    <select class="form-control selectFilter FacilityName" id="facilityselect">
+    <option value="-1">-- Select Facility --</option>
+    <!-- <h2>Facility</h2>
+    <select id="selDataset"> -->
+    <option value="670124">THE HOSPITALS OF PROVIDENCE HORIZON CITY CAMPUS</option>
+    <option value="670121">SAINT CAMILLUS MEDICAL CENTER</option>
+    <option value="670107">BAYLOR SCOTT AND WHITE EMERGENCY HOSPITAL</option>
+    <option value="670106">HCA HOUSTON HEALTHCARE PEARLAND</option>
+    <option value="670102">AD HOSPITAL EAST, LLC</option>
+    <option value="670090">CRESCENT MEDICAL CENTER LANCASTER</option>
+    <option value="670088">BAYLOR SCOTT & WHITE MEDICAL CENTER- COLLEGE STATI</option>
+    <option value="670085">TEXAS HEALTH HARRIS METHODIST HOSPITAL ALLIANCE</option>
+    <option value="670082">BAYLOR SCOTT AND WHITE MEDICAL CENTER MCKINNEY</option>
+    <option value="670078">BAPTIST EMERGENCY HOSPITAL</option>
+    <option value="670076">BAYLOR SCOTT AND WHITE SURGICAL HOSPITAL AT SHERMA</option>
+    <option value="670069">METHODIST MCKINNEY HOSPITAL</option>
+    <option value="670061">SOUTH TEXAS SURGICAL HOSPITAL</option>
+    <option value="670059">CHI ST LUKES LAKESIDE HOSPITAL</option>
+    <option value="670056">ASCENSION SETON HAYS</option>
+    <option value="670054">FOUNDATION SURGICAL HOSPITAL OF SAN ANTONIO</option>
+    <option value="670049">NORTH CENTRAL SURGICAL CENTER LLP</option>
+    <option value="670047">THE HOSPITALS OF PROVIDENCE - EAST CAMPUS</option>
+    <option value="670044">TEXAS HEALTH PRESBYTERIAN HOSPITAL ROCKWALL</option>
+    <option value="670043">CEDAR PARK REGIONAL MEDICAL CENTER</option>
+    <option value="670041">ASCENSION SETON WILLIAMSON</option>
+    <option value="670034">BAYLOR SCOTT & WHITE MEDICAL CENTER - ROUND ROCK</option>
+    <option value="670031">CHI ST LUKE'S PATIENTS MEDICAL CENTER</option>
+    <option value="670025">BAYLOR SCOTT & WHITE THE HEART HOSPITAL - PLANO</option>
+    <option value="450891">TEXAS HEALTH CENTER FOR DIAGNOSTICS & SURGERY</option>
+    <option value="450888">TEXAS HEALTH HARRIS METHODIST HOSPITAL SOUTHLAKE</option>
+    <option value="45086F">TEMPLE VA MEDICAL CENTER (VA CENTRAL TEXAS HEALTHCARE SYSTEM)</option>
+    <option value="450869">DOCTORS HOSPITAL AT RENAISSANCE</option>
+    <option value="450864">BAYLOR SCOTT & WHITE TEXAS SPINE & JOINT HOSPITAL</option>
+    <option value="450856">SOUTH TEXAS SPINE AND SURGICAL HOSPITAL</option>
+    <option value="450855">HARLINGEN MEDICAL CENTER</option>
+    <option value="450851">BAYLOR SCOTT & WHITE HEART & VASCULAR HOSPITAL - DALLAS</option>
+    <option value="450848">MEMORIAL HERMANN SUGAR LAND HOSPITAL</option>
+    <option value="450847">MEMORIAL HERMANN KATY HOSPITAL</option>
+    <option value="450844">HOUSTON METHODIST WILLOWBROOK HOSPITAL</option>
+    <option value="450825">CORNERSTONE REGIONAL HOSPITAL</option>
+    <option value="450822">MEDICAL CITY LAS COLINAS</option>
+    <option value="450820">HOUSTON METHODIST SUGARLAND HOSPITAL</option>
+    <option value="450803">DOCTORS HOSPITAL TIDWELL</option>
+    <option value="450801">CHRISTUS ST MICHAEL HEALTH SYSTEM</option>
+    <option value="450780">METHODIST HOSPITAL AMBULATORY SURGERY</option>
+    <option value="450779">TEXAS HEALTH HARRIS METHODIST HOSPITAL SOUTHWEST F</option>
+    <option value="450774">TOPS SURGICAL SPECIALTY HOSPITAL</option>
+    <option value="45074F">HOUSTON VA MEDICAL CENTER</option>
+    <option value="450747">PALESTINE REGIONAL MEDICAL CENTER</option>
+    <option value="450743">TEXAS HEALTH PRESBYTERIAN HOSPITAL DENTON</option>
+    <option value="450742">BAYLOR SCOTT AND WHITE MEDICAL CENTER LAKE POINTE</option>
+    <option value="450730">BAYLOR SCOTT AND WHITE MEDICAL CENTER CARROLLTON</option>
+    <option value="450723">METHODIST CHARLTON MEDICAL CENTER</option>
+    <option value="450718">ROUND ROCK MEDICAL CENTER</option>
+    <option value="450713">ST DAVID'S SOUTH AUSTIN MEDICAL CENTER</option>
+    <option value="45070F">Darnall AMC (FT Hood)</option>
+    <option value="450709">HOUSTON METHODIST CLEAR LAKE HOSPITAL</option>
+    <option value="450702">LONGVIEW REGIONAL MEDICAL CENTER</option>
+    <option value="450698">LAMB HEALTHCARE CENTER</option>
+    <option value="45068F">William Beaumont AMG (FT Bliss)</option>
+    <option value="450688">DALLAS REGIONAL MEDICAL CENTER</option>
+    <option value="450686">UNIVERSITY MEDICAL CENTER</option>
+    <option value="450684">MEMORIAL HERMANN NORTHEAST HOSPITAL</option>
+    <option value="450678">BAYLOR SCOTT & WHITE MEDICAL CENTER-WHITE ROCK</option>
+    <option value="450677">TEXAS HEALTH HUGULEY HOSPITAL FORT WORTH SOUTH</option>
+    <option value="450675">MEDICAL CITY ARLINGTON</option>
+    <option value="450674">WOMANS HOSPITAL OF TEXAS,THE</option>
+    <option value="450672">MEDICAL CITY FORT WORTH</option>
+    <option value="45066F">DALLAS VA MEDICAL CENTER (VA NORTH TEXAS HEALTHCARE SYSTEM)</option>
+    <option value="450669">MEDICAL CITY LEWISVILLE</option>
+    <option value="450668">THE HOSPITALS OF PROVIDENCE - SIERRA CAMPUS</option>
+    <option value="450662">VALLEY REGIONAL MEDICAL CENTER</option>
+    <option value="450661">ODESSA REGIONAL MEDICAL CENTER</option>
+    <option value="450658">FREESTONE MEDICAL CENTER</option>
+    <option value="450653">SCENIC MOUNTAIN MEDICAL CENTER, A STEWARD FAMILY H</option>
+    <option value="450651">MEDICAL CITY PLANO</option>
+    <option value="450647">MEDICAL CITY DALLAS HOSPITAL</option>
+    <option value="450644">HCA HOUSTON HEALTHCARE WEST</option>
+    <option value="450641">NOCONA GENERAL HOSPITAL</option>
+    <option value="450639">TEXAS HEALTH HARRIS METHODIST HURST-EULESS-BEDFORD</option>
+    <option value="450638">HCA HOUSTON HEALTHCARE NORTHWEST</option>
+    <option value="450634">MEDICAL CITY DENTON</option>
+    <option value="450617">HCA HOUSTON HEALTHCARE CLEAR LAKE</option>
+    <option value="450597">CUERO REGIONAL HOSPITAL</option>
+    <option value="450573">CHRISTUS JASPER MEMORIAL HOSPITAL</option>
+    <option value="450565">PALO PINTO GENERAL HOSPITAL</option>
+    <option value="450539">COVENANT HOSPITAL PLAINVIEW</option>
+    <option value="450537">METHODIST RICHARDSON MEDICAL CENTER</option>
+    <option value="450518">THE MEDICAL CENTER OF SOUTHEAST TEXAS</option>
+    <option value="450489">MEDICAL ARTS HOSPITAL</option>
+    <option value="450475">UT HEALTH EAST TEXAS HENDERSON HOSPITAL</option>
+    <option value="450465">MATAGORDA REGIONAL MEDICAL CENTER</option>
+    <option value="450447">NAVARRO REGIONAL HOSPITAL</option>
+    <option value="450431">ST DAVID'S MEDICAL CENTER</option>
+    <option value="450411">EASTLAND MEMORIAL HOSPITAL</option>
+    <option value="450395">CHI ST LUKES HEALTH MEMORIAL LIVINGSTON</option>
+    <option value="450389">UT HEALTH EAST TEXAS ATHENS HOSPITAL</option>
+    <option value="450379">DALLAS MEDICAL CENTER</option>
+    <option value="450369">CHILDRESS REGIONAL MEDICAL CENTER</option>
+    <option value="450358">HOUSTON METHODIST HOSPITAL</option>
+    <option value="450348">FALLS COMMUNITY HOSPITAL AND CLINIC</option>
+    <option value="450347">HUNTSVILLE MEMORIAL HOSPITAL</option>
+    <option value="450346">BAPTIST BEAUMONT HOSPITAL</option>
+    <option value="450330">OAKBEND MEDICAL CENTER</option>
+    <option value="450292">TEXAS HEALTH PRESBYTERIAN HOSPITAL KAUFMAN</option>
+    <option value="450289">HARRIS HEALTH SYSTEM</option>
+    <option value="450272">CHRISTUS SANTA ROSA HOSPITAL-SAN MARCOS</option>
+    <option value="450241">FAITH COMMUNITY HOSPITAL</option>
+    <option value="450235">MEMORIAL HOSPITAL</option>
+    <option value="450231">BAPTIST ST ANTHONY'S HOSPITAL</option>
+    <option value="450229">HENDRICK MEDICAL CENTER</option>
+    <option value="450222">HCA HOUSTON HEALTHCARE CONROE</option>
+    <option value="450213">UNIVERSITY HEALTH SYSTEM</option>
+    <option value="450210">EAST TEXAS MEDICAL CENTER - CARTHAGE</option>
+    <option value="450209">NORTHWEST TEXAS HOSPITAL</option>
+    <option value="450203">MEDICAL CITY WEATHERFORD</option>
+    <option value="450200">WADLEY REGIONAL MEDICAL CENTER</option>
+    <option value="450194">UT HEALTH EAST TEXAS JACKSONVILLE HOSPITAL</option>
+    <option value="450187">BAYLOR SCOTT & WHITE MEDICAL CENTER - BRENHAM</option>
+    <option value="450184">MEMORIAL HERMANN HOSPITAL SYSTEM</option>
+    <option value="450154">VAL VERDE REGIONAL MEDICAL CENTER</option>
+    <option value="450152">ADVENTHEALTH CENTRAL TEXAS</option>
+    <option value="450148">TEXAS HEALTH HARRIS METHODIST HOSPITAL CLEBURNE</option>
+    <option value="450143">ASCENSION SETON SMITHVILLE</option>
+    <option value="450137">BAYLOR SCOTT & WHITE ALL SAINTS MEDICAL CENTER FORT WORTH</option>
+    <option value="450135">TEXAS HEALTH HARRIS METHODIST HOSPITAL FORT WORTH</option>
+    <option value="450133">MIDLAND MEMORIAL HOSPITAL</option>
+    <option value="450132">MEDICAL CENTER HOSPITAL</option>
+    <option value="450128">KNAPP MEDICAL CENTER</option>
+    <option value="450124">DELL SETON MED CENTER AT THE UNIVERSITY OF TX</option>
+    <option value="450108">CONNALLY MEMORIAL MEDICAL CENTER</option>
+    <option value="450107">LAS PALMAS DEL SOL HEALTHCARE</option>
+    <option value="450104">GUADALUPE REGIONAL MEDICAL CENTER</option>
+    <option value="450102">CHRISTUS MOTHER FRANCES HOSPITAL</option>
+    <option value="450099">PAMPA REGIONAL MEDICAL CENTER</option>
+    <option value="450097">HCA HOUSTON HEALTHCARE SOUTHEAST</option>
+    <option value="450090">NORTH TEXAS MEDICAL CENTER</option>
+    <option value="450085">GRAHAM REGIONAL MEDICAL CENTER</option>
+    <option value="450082">CHRISTUS SPOHN HOSPITAL BEEVILLE</option>
+    <option value="450080">TITUS REGIONAL MEDICAL CENTER</option>
+    <option value="450078">ANSON GENERAL HOSPITAL</option>
+    <option value="450072">CHI ST. LUKES' BRAZOSPORT HOSPITAL</option>
+    <option value="450068">MEMORIAL HERMANN - TEXAS MEDICAL CENTER</option>
+    <option value="450064">TEXAS HEALTH ARLINGTON MEMORIAL HOSPITAL</option>
+    <option value="450058">BAPTIST MEDICAL CENTER</option>
+    <option value="450055">ROLLING PLAINS MEMORIAL HOSPITAL</option>
+    <option value="450054">BAYLOR SCOTT & WHITE MEDICAL CENTER - TEMPLE</option>
+    <option value="450051">METHODIST DALLAS MEDICAL CENTER</option>
+    <option value="450046">CHRISTUS SPOHN HOSPITAL CORPUS CHRISTI</option>
+    <option value="450044">UT SOUTHWESTERN UNIVERSITY HOSPITAL - WILLIAM P. CLEMENTS JR.</option>
+    <option value="450042">PROVIDENCE HEALTH CENTER</option>
+    <option value="450040">COVENANT MEDICAL CENTER</option>
+    <option value="450039">JPS HEALTH NETWORK</option>
+    <option value="450035">ST JOSEPH MEDICAL CENTER</option>
+    <option value="450034">CHRISTUS SOUTHEAST TEXAS- ST ELIZABETH</option>
+    <option value="450033">VHS HARLINGEN HOSPITAL COMPANY LLC</option>
+    <option value="450032">CHRISTUS GOOD SHEPHERD MEDICAL CENTER</option>
+    <option value="450029">LAREDO MEDICAL CENTER</option>
+    <option value="450028">VALLEY BAPTIST MEDICAL CENTER- BROWNSVILLE</option>
+    <option value="450024">UNIVERSITY MEDICAL CENTER OF EL PASO</option>
+    <option value="450023">CITIZENS MEDICAL CENTER</option>
+    <option value="450021">BAYLOR UNIVERSITY MEDICAL CENTER</option>
+    <option value="450018">UNIVERSITY OF TEXAS MEDICAL BRANCH GALVESTON</option>
+    <option value="450015">PARKLAND HEALTH & HOSPITAL SYSTEM</option>
+    <option value="450011">ST JOSEPH REGIONAL HEALTH CENTER</option>
+    <option value="450010">UNITED REGIONAL HEALTH CARE SYSTEM</option>
+    <option value="450007">PETERSON REGIONAL MEDICAL CENTER</option>
+
+
+
+    <!-- <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <title>Dropdown Events</title>
+            <script src="https://d3js.org/d3.v5.min.js"></script>
+            <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+        </head>
+
+        body>
+    <h1>City</h1>
+    <select id="selDataset">
+        <option value="us">United States</option>
+        <option value="ak">Alaska</option>
+        <option value="al">Alabama</option>
+        <option value="az">Arizona</option>
+        <option value="ar">Arkansas</option>
+        <option value="ca">California</option>
+        <option value="co">Colorado</option>
+        <option value="ct">Connecticut</option>
+        <option value="dc">District of Columbia</option>
+        <option value="fl">Florida</option>
+        <option value="ga">Georgia</option>
+        <option value="hi">Hawaii</option>
+        <option value="id">Idaho</option>
+        <option value="il">Illinois</option>
+        <option value="ind">Indiana</option>
+        <option value="ia">Iowa</option>
+        <option value="ks">Kansas</option>
+        <option value="ky">Kentucky</option>
+        <option value="la">Louisiana</option>
+        <option value="me">Maine</option>
+        <option value="md">Maryland</option>
+        <option value="ma">Massachusetts</option>
+        <option value="mi">Michigan</option>
+        <option value="mn">Minnesota</option>
+        <option value="ms">Mississippi</option>
+        <option value="mo">Missouri</option>
+        <option value="mt">Montana</option>
+        <option value="ne">Nebraska</option>
+        <option value="nv">Nevada</option>
+        <option value="nh">New Hampshire</option>
+        <option value="nj">New Jersey</option>
+        <option value="nm">New Mexico</option>
+        <option value="ny">New York</option>
+        <option value="nc">North Carolina</option>
+        <option value="nd">North Dakota</option>
+        <option value="oh">Ohio</option>
+        <option value="ok">Oklahoma</option>
+        <option value="or">Oregon</option>
+        <option value="pa">Pennsylvania</option>
+        <option value="ri">Rhode Island</option>
+        <option value="sc">South Carolina</option>
+        <option value="sd">South Dakota</option>
+        <option value="tn">Tennessee</option>
+        <option value="tx">Texas</option>
+        <option value="ut">Utah</option>
+        <option value="vt">Vermont</option>
+        <option value="va">Virginia</option>
+        <option value="wa">Washington</option>
+        <option value="wv">West Virginia</option>
+        <option value="wi">Wisconsin</option>
+        <option value="wy">Wyoming</option>
+    </select> -->
+
+    <script src="hospitaldata.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
