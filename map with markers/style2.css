@@ -1,0 +1,15 @@
+    /* Remove the default margin and padding from the body. */
+    
+    body {
+        padding: 0;
+        margin: 0;
+    }
+    
+    #map {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-right: 150px;
+        margin-left: 80px;
+        height: 50vh;
+        width: 40%;
+    }
