@@ -28,6 +28,16 @@ var data = {
         SSI_Colon_Surgery_Infections: 0,
         Hospital_Acquired_Infections: 0
     },
+
+    ba: {
+        Catheter_Associated_Urinary_Tract_Infections: .06,
+        Central_Line_Associated_Bloodstream_Infections: .26,
+        Clostridium_Difficile_C_Diff_Infections: .06,
+        MRSA_Bacteremia_Infections: 0,
+        Abdominal_Hysterectomy_Infections: 0, 
+        SSI_Colon_Surgery_Infections: 0,
+        Hospital_Acquired_Infections: 0
+    },
    
 };
 

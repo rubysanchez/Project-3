@@ -2,6 +2,7 @@
 var us = Object.values(data.us);
 var ak = Object.values(data.ak);
 var al = Object.values(data.al);
+var ba = Object.values(data.ba);
 //need to loop through values vs creating a variable for each
 
 
@@ -43,6 +44,9 @@ function getData() {
   }
   else if (dataset == 'al') {
       data = al;
+  }
+  else if (dataset == 'ba') {
+    data = ba;
   }
 
   // Call function to update the chart
