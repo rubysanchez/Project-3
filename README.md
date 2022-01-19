@@ -1,6 +1,8 @@
 # Project-3
 Visualizing Data
 
+Link to Heroku App:  [Group 3 Heroku App](https://smu-project-3.herokuapp.com/)
+
 ![Slide1](https://github.com/rubysanchez/Project-3/blob/main/Junk%20Drawer/Images/Slide1.PNG)
 ![Slide2](https://github.com/rubysanchez/Project-3/blob/main/Junk%20Drawer/Images/Slide2.PNG)
 ![Slide3](https://github.com/rubysanchez/Project-3/blob/main/Junk%20Drawer/Images/Slide3.PNG)
