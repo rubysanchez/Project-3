@@ -1,26 +1,17 @@
-selenium==3.5.0
-splinter==0.7.6
-Certifi == 
-Click == 
-Flask == 
-Flask-sqlAlchemy== 
-gunicorn == 
-itsdangerous == 
-Jinja2 == 
-Markupsafe == 
-numpy== 
-pandas==pd
-sqlAlchemy==sqlite3
-werkzeug== 
-wincertstore==
-bootstrap==4.3.1
-stateselect==d3
-Chart.js==2.5.0
-script.==js
-jquery.==js
-nicepage.==css
-nicepage.==js
-leafle@==1.6.0
-%matplotlib==inline
-app.py
-plots.js
+certifi==2020.6.20
+click==8.0.3
+colorama==0.4.4
+dataclasses==0.8
+Flask==2.0.2
+Flask-SQLAlchemy==2.5.1
+greenlet==1.1.2
+gunicorn==20.1.0
+importlib-metadata==4.8.3
+itsdangerous==2.0.1
+Jinja2==3.0.3
+MarkupSafe==2.0.1
+SQLAlchemy==1.4.29
+typing_extensions==4.0.1
+Werkzeug==2.0.2
+wincertstore==0.2
+zipp==3.6.0
